@@ -2470,6 +2470,8 @@ private: // privates
     //
     void OnClickUninstallButton()
     {
+        SavePageSettings(WIXSTDBA_PAGE_MODIFY);
+
         this->OnPlan(BOOTSTRAPPER_ACTION_UNINSTALL);
     }
 
